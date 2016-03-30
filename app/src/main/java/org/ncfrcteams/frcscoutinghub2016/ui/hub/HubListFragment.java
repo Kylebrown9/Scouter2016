@@ -12,6 +12,8 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import org.ncfrcteams.frcscoutinghub2016.R;
+import org.ncfrcteams.frcscoutinghub2016.matchdata.schedule.Match;
+import org.ncfrcteams.frcscoutinghub2016.matchdata.schedule.Schedule;
 import org.ncfrcteams.frcscoutinghub2016.ui.DatabaseAdapter;
 
 
@@ -19,6 +21,7 @@ public class HubListFragment extends Fragment implements AdapterView.OnItemClick
         AdapterView.OnItemLongClickListener, DatabaseAdapter.DatabaseListener{
 
     private OnHubListFragListener mListener;
+    public Schedule mySchedule;
     public DatabaseAdapter myListAdapter;
     ListView hubListView;
 
@@ -38,7 +41,14 @@ public class HubListFragment extends Fragment implements AdapterView.OnItemClick
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.h_frag_list, container, false);
 
-        myListAdapter = new DatabaseAdapter(getContext(), this);
+        Match m1 = Match.getBlank(1, true);
+        Match m2 = Match.getBlank(2,false);
+        Match[] matches ={m1,m2,Match.getBlank(3,true)};
+
+        myListAdapter = new DatabaseAdapter(getContext(), this, matches);
+        mySchedule = new Schedule();
+        mySchedule.setScheduleChangeListener(myListAdapter);
+
         hubListView = (ListView) view.findViewById(R.id.hubListView);
         hubListView.setAdapter(myListAdapter);
         hubListView.setOnItemClickListener(this);
@@ -51,6 +61,7 @@ public class HubListFragment extends Fragment implements AdapterView.OnItemClick
     public void onItemClick(AdapterView<?> parent, View view, int position, long id){
         String item = myListAdapter.getItem(position).getText();
         Toast.makeText(getActivity(), item, Toast.LENGTH_SHORT).show();
+        onListChange();
     }
 
     @Override
@@ -79,7 +90,9 @@ public class HubListFragment extends Fragment implements AdapterView.OnItemClick
 
     @Override
     public void onListChange() {
-        hubListView.invalidate();
+        Toast.makeText(getContext(), "invalidate", Toast.LENGTH_SHORT).show();
+        hubListView.setAdapter(myListAdapter);
+        hubListView.refreshDrawableState();
     }
 
     public interface OnHubListFragListener {

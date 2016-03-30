@@ -50,7 +50,7 @@ public class ScoutPrematchActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Toast.makeText(getApplicationContext(), ":)", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, ":)", Toast.LENGTH_SHORT).show();
     }
 
     public void orientation1Selected(View view){
@@ -71,9 +71,11 @@ public class ScoutPrematchActivity extends AppCompatActivity {
     }
 
     public void onActivityResult(int requestCode, int resultCode, Intent intent) {
+        Toast.makeText(getApplicationContext(), "yay...", Toast.LENGTH_SHORT).show();
         IntentResult scanResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
+        Toast.makeText(getApplicationContext(), "yay?", Toast.LENGTH_SHORT).show();
         if (scanResult != null) {
-            Toast.makeText(getApplicationContext(), scanResult.getContents(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "YAY", Toast.LENGTH_SHORT).show();
             Intent intent2 = new Intent(this, ScoutMainActivity.class);
             intent.putExtra("Match Setup", scanResult.getContents());
             intent.putExtra("Orientation", orientation);

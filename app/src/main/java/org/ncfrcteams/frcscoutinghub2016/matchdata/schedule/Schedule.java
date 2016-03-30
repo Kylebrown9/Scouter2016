@@ -9,7 +9,7 @@ import java.util.List;
  */
 public class Schedule {
     private List<MatchDescriptor> matchDescriptorList;
-    private List<ScheduleEntry> scheduleEntries;
+    private List<Match> matches;
     private ScheduleChangeListener scheduleChangeListener = null;
 
     //****************************************UI Methods*********************************
@@ -19,7 +19,7 @@ public class Schedule {
      */
     public Schedule() {
         matchDescriptorList = new ArrayList<>();
-        scheduleEntries = new ArrayList<>();
+        matches = new ArrayList<>();
     }
 
     /**
@@ -31,8 +31,8 @@ public class Schedule {
     }
 
     /**
-     * Adds a single MatchDescriptor to the matchDescriptorList sorts it then updates the
-     * scheduleEntriesList and informs the scheduleChangeListener of the changes
+     * Adds a single MatchDescriptor to the matchDescriptorList sorts it then updates matches
+     * and informs the scheduleChangeListener of the changes
      * @param matchDescriptor the MatchDescriptor to be added
      */
     public synchronized void add(MatchDescriptor matchDescriptor) {
@@ -53,17 +53,17 @@ public class Schedule {
     /**
      * @return an up to date copy of the scheduleEntries list
      */
-    public synchronized List<ScheduleEntry> getScheduleEntries() {
-        return new ArrayList<>(scheduleEntries);
+    public synchronized List<Match> getMatches() {
+        return new ArrayList<>(matches);
     }
 
     private void update() {
         Collections.sort(matchDescriptorList);
-        scheduleEntries.clear();
+        matches.clear();
 
         int lastNum = 1;
         int currNum;
-        ScheduleEntry newEntry;
+        Match newMatch;
         boolean lastMatchWasQual = matchDescriptorList.get(0).isQual();
 
         for(MatchDescriptor matchDescriptor : matchDescriptorList) {
@@ -74,57 +74,23 @@ public class Schedule {
             }
 
             for(int i=lastNum; i<currNum; i++) {
-                newEntry = ScheduleEntry.getBlank(i,matchDescriptor.isQual());
-                scheduleEntries.add(newEntry);
+                newMatch = Match.getBlank(i,matchDescriptor.isQual());
+                matches.add(newMatch);
             }
 
-            newEntry = ScheduleEntry.getFromDescriptor(matchDescriptor);
-            scheduleEntries.add(newEntry);
+            newMatch = Match.getFromDescriptor(matchDescriptor);
+            matches.add(newMatch);
 
             lastNum = currNum;
             lastMatchWasQual = matchDescriptor.isQual();
         }
 
         if(scheduleChangeListener != null) {
-            scheduleChangeListener.notifyScheduleChanges(getScheduleEntries());
-        }
-    }
-
-    public static class ScheduleEntry {
-        private int matchNum;
-        private boolean isQual;
-        private MatchDescriptor matchDescriptor;
-
-        private ScheduleEntry(int matchNum, MatchDescriptor matchDescriptor, boolean isQual) {
-            this.matchNum = matchNum;
-            this.matchDescriptor = matchDescriptor;
-            this.isQual = isQual;
-        }
-
-        public static ScheduleEntry getBlank(int matchNum, boolean isQual) {
-            return new ScheduleEntry(matchNum,null,isQual);
-        }
-
-        public static ScheduleEntry getFromDescriptor(MatchDescriptor matchDescriptor) {
-            return new ScheduleEntry(matchDescriptor.getMatchNum(),matchDescriptor,matchDescriptor.isQual());
-        }
-
-        /**
-         * @return whether or not this ScheduleEntry is a placeholder or a real match
-         */
-        public boolean isPlaceHolder() {
-            return matchDescriptor == null;
-        }
-
-        /**
-         * @return a string representation of this ScheduleEntry
-         */
-        public String toString() {
-            return (isQual? "Qual " : "Elim ") + matchNum;
+            scheduleChangeListener.notifyScheduleChanges(getMatches());
         }
     }
 
     public interface ScheduleChangeListener {
-        void notifyScheduleChanges(List<ScheduleEntry> scheduleEntries);
+        void notifyScheduleChanges(List<Match> matches);
     }
 }

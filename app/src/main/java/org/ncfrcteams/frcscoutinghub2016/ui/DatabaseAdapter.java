@@ -8,51 +8,36 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import org.ncfrcteams.frcscoutinghub2016.R;
-import org.ncfrcteams.frcscoutinghub2016.matchdata.Match;
-import org.ncfrcteams.frcscoutinghub2016.matchdata.database.MatchRecord;
-import org.ncfrcteams.frcscoutinghub2016.matchdata.schedule.MatchDescriptor;
+import org.ncfrcteams.frcscoutinghub2016.matchdata.schedule.Match;
+import org.ncfrcteams.frcscoutinghub2016.matchdata.schedule.Schedule;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by pavan on 3/30/16.
  */
-public class DatabaseAdapter extends ArrayAdapter<Match> {
+public class DatabaseAdapter extends ArrayAdapter<Match> implements Schedule.ScheduleChangeListener{
 
     private Context context;
     private DatabaseListener listener;
-    public List<Match> matches;
 
     public DatabaseAdapter(Context context, DatabaseListener listener, Match[] matches) {
         super(context, R.layout.h_listview_contents, matches);
         this.context = context;
         this.listener = listener;
-        this.matches = new ArrayList<>();
-    }
-
-    public DatabaseAdapter(Context context, DatabaseListener listener) {
-        super(context, R.layout.h_listview_contents);
-        this.context = context;
-        this.listener = listener;
-        this.matches = new ArrayList<>();
-    }
-
-    /*
-    @Override
-    public int getCount() {
-        return matches.size();
     }
 
     @Override
-    public Match getItem(int position) {
-        return matches.get(position);
+    public void notifyDataSetChanged() {
+        super.notifyDataSetChanged();
+        this.listener.onListChange();
     }
-    */
 
     @Override
     public View getView(int position, View view, ViewGroup parent) {
-        view = LayoutInflater.from(context).inflate(R.layout.h_listview_contents, parent, false);
+        if (view == null) {
+            view = LayoutInflater.from(context).inflate(R.layout.h_listview_contents, parent, false);
+        }
 
         Match match = getItem(position);
         TextView listViewText = (TextView) view.findViewById(R.id.listViewText);
@@ -62,19 +47,10 @@ public class DatabaseAdapter extends ArrayAdapter<Match> {
         return view;
     }
 
-    public void setMatchDescriptor(int position, MatchDescriptor matchDescriptor){
-        //TODO update matches
-        update();
-    }
-
-    public void setMatchRecord(int position, MatchRecord matchRecord){
-        //TODO update matches
-        update();
-    }
-
-    private void update(){
-        //TODO set up the array adapter with matches
-        listener.onListChange();
+    @Override
+    public void notifyScheduleChanges(List<Match> matches) {
+        this.clear();
+        this.addAll(matches);
     }
 
     public interface DatabaseListener{
