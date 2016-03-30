@@ -72,8 +72,8 @@ public class ScoutPrematchActivity extends AppCompatActivity {
 
     public void onActivityResult(int requestCode, int resultCode, Intent intent) {
         IntentResult scanResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
-
         if (scanResult != null) {
+            Toast.makeText(getApplicationContext(), scanResult.getContents(), Toast.LENGTH_SHORT).show();
             Intent intent2 = new Intent(this, ScoutMainActivity.class);
             intent.putExtra("Match Setup", scanResult.getContents());
             intent.putExtra("Orientation", orientation);
