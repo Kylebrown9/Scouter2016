@@ -1,0 +1,89 @@
+package org.ncfrcteams.frcscoutinghub2016.ui.hub;
+
+import android.content.Context;
+import android.net.Uri;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ListView;
+import android.widget.Toast;
+
+import org.ncfrcteams.frcscoutinghub2016.R;
+import org.ncfrcteams.frcscoutinghub2016.ui.DatabaseAdapter;
+
+
+public class HubListFragment extends Fragment implements AdapterView.OnItemClickListener,
+        AdapterView.OnItemLongClickListener, DatabaseAdapter.DatabaseListener{
+
+    private OnHubListFragListener mListener;
+    public DatabaseAdapter myListAdapter;
+    ListView hubListView;
+
+    public HubListFragment() {
+    }
+
+    public static HubListFragment newInstance() {
+        return new HubListFragment();
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.h_frag_list, container, false);
+
+        myListAdapter = new DatabaseAdapter(getContext(), this);
+        hubListView = (ListView) view.findViewById(R.id.hubListView);
+        hubListView.setAdapter(myListAdapter);
+        hubListView.setOnItemClickListener(this);
+        hubListView.setOnItemLongClickListener(this);
+
+        return view;
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id){
+        String item = myListAdapter.getItem(position).getText();
+        Toast.makeText(getActivity(), item, Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+        String item = myListAdapter.getItem(position).getText();
+        Toast.makeText(getActivity(), item + " long", Toast.LENGTH_SHORT).show();
+        return true;
+    }
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        if (context instanceof OnHubListFragListener) {
+            mListener = (OnHubListFragListener) context;
+        } else {
+            throw new RuntimeException(context.toString()
+                    + " must implement OnHubListFragListener");
+        }
+    }
+
+    @Override
+    public void onDetach() {
+        super.onDetach();
+        mListener = null;
+    }
+
+    @Override
+    public void onListChange() {
+        hubListView.invalidate();
+    }
+
+    public interface OnHubListFragListener {
+        void onHubListFragInteraction(Uri uri);
+    }
+
+}
