@@ -34,13 +34,13 @@ public class SuperMap<K,V> implements Serializable {
 
     public synchronized String undo() {
         if(pairList.size() == 0)
-            return "No put to undo";
+            return "Nothing To Undo";
 
         int last = pairList.size()-1;
         Pair<K,V> lastState = pairList.get(last);
         pairList.remove(last);
         map.put(lastState.key, lastState.value);
-        return "Reverted key: " + lastState.key + ", to previous value: " + lastState.value;
+        return "Reverted " + lastState.key + " To " + lastState.value;
     }
 
     public synchronized void clearHistory(){

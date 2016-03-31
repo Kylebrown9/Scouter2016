@@ -1,8 +1,5 @@
 package org.ncfrcteams.frcscoutinghub2016.matchdata.database;
 
-import android.util.Xml;
-
-import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
 
