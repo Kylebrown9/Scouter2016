@@ -8,8 +8,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import org.ncfrcteams.frcscoutinghub2016.R;
+import org.ncfrcteams.frcscoutinghub2016.ui.dialogs.HubCreateDialog;
 
-public class HubCreateFragment extends Fragment implements View.OnClickListener{
+public class HubCreateFragment extends Fragment implements View.OnClickListener, HubCreateDialog.HubCreateDialogListener{
 
     private HubCreateFragListener mListener;
     public HubCreateFragment() {
@@ -55,21 +56,18 @@ public class HubCreateFragment extends Fragment implements View.OnClickListener{
         switch(view.getId()){
             case R.id.createClickMe:
                 //TODO create new match dialog
-                int[] teams = {1991,22,45553,5134,643,833};
-                mListener.addNewMatch(teams, 3);
-                break;
-            case R.id.rightLowGoal:
-                break;
-            case R.id.rightSuccess:
-                break;
-            case R.id.rightFailure:
                 break;
             default:
                 break;
         }
     }
 
+    @Override
+    public void onNewMatchCreate(int[] teams, int matchnum, boolean isQual, String phonenum) {
+        mListener.addNewMatch(teams, matchnum, true, phonenum);
+    }
+
     public interface HubCreateFragListener {
-        void addNewMatch(int[] teams, int matchnum);
+        void addNewMatch(int[] teams, int matchnum, boolean isQual, String phonenum);
     }
 }

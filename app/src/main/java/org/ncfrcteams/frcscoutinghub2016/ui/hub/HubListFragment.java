@@ -88,8 +88,8 @@ public class HubListFragment extends Fragment implements AdapterView.OnItemClick
         mListener.autopush(); //TODO auto push to server?
     }
 
-    public void addNewMatch(int[] teams, int matchnum){
-        mySchedule.add(new MatchDescriptor(getContext(), matchnum, teams));
+    public void addNewMatch(int[] teams, int matchnum, boolean isQual, String phonenum){
+        mySchedule.add(new MatchDescriptor(getContext(), matchnum, teams)); //TODO add isQual Boolean and phonenum String
     }
 
     public String getDatabase() {

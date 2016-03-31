@@ -107,7 +107,7 @@ public class HubActivity extends AppCompatActivity implements SmsReceiver.SmsLis
     }
 
     @Override
-    public void addNewMatch(int[] teams, int matchnum) {
-        ((HubListFragment)fragments.get(1)).addNewMatch(teams, matchnum);
+    public void addNewMatch(int[] teams, int matchnum, boolean isQual, String phonenum) {
+        ((HubListFragment)fragments.get(1)).addNewMatch(teams, matchnum, isQual, phonenum);
     }
 }

@@ -42,11 +42,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="HubActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HubActivity.java" pinned="false" current-in-tab="true">
         <entry file="file:///media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/java/org/ncfrcteams/frcscoutinghub2016/ui/hub/HubActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="86" column="51" selection-start-line="86" selection-start-column="51" selection-end-line="86" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.5658627">
+              <caret line="105" column="44" selection-start-line="105" selection-start-column="44" selection-end-line="105" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -56,17 +56,37 @@
         <entry file="file:///media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/java/org/ncfrcteams/frcscoutinghub2016/ui/hub/HubCreateFragment.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="60" column="35" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="35" />
+              <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HubContentsFragment.java" pinned="false" current-in-tab="true">
-        <entry file="file:///media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/java/org/ncfrcteams/frcscoutinghub2016/ui/hub/HubContentsFragment.java">
+      <file leaf-file-name="ScoutMainActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file:///media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/java/org/ncfrcteams/frcscoutinghub2016/ui/scout/ScoutMainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7012987">
-              <caret line="42" column="38" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="138" column="33" selection-start-line="138" selection-start-column="33" selection-end-line="138" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HubCreateDialog.java" pinned="false" current-in-tab="false">
+        <entry file="file:///media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/java/org/ncfrcteams/frcscoutinghub2016/ui/dialogs/HubCreateDialog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="74" column="44" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HubListFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file:///media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/java/org/ncfrcteams/frcscoutinghub2016/ui/hub/HubListFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="98" column="42" selection-start-line="98" selection-start-column="42" selection-end-line="98" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -1987,11 +2007,12 @@
         <option value="/media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/res/layout/h_listview_contents.xml" />
         <option value="/media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/res/layout/h_frag_list.xml" />
         <option value="/media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/res/layout/h_frag_create.xml" />
-        <option value="/media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/java/org/ncfrcteams/frcscoutinghub2016/ui/hub/HubListFragment.java" />
-        <option value="/media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/java/org/ncfrcteams/frcscoutinghub2016/ui/hub/HubActivity.java" />
-        <option value="/media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/java/org/ncfrcteams/frcscoutinghub2016/ui/hub/HubCreateFragment.java" />
         <option value="/media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/java/org/ncfrcteams/frcscoutinghub2016/ui/scout/ScoutPrematchActivity.java" />
         <option value="/media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/java/org/ncfrcteams/frcscoutinghub2016/ui/hub/HubContentsFragment.java" />
+        <option value="/media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/java/org/ncfrcteams/frcscoutinghub2016/ui/dialogs/HubCreateDialog.java" />
+        <option value="/media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/java/org/ncfrcteams/frcscoutinghub2016/ui/hub/HubCreateFragment.java" />
+        <option value="/media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/java/org/ncfrcteams/frcscoutinghub2016/ui/hub/HubListFragment.java" />
+        <option value="/media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/java/org/ncfrcteams/frcscoutinghub2016/ui/hub/HubActivity.java" />
       </list>
     </option>
   </component>
@@ -2119,6 +2140,122 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="FRCScoutingHub2016" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FRCScoutingHub2016" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FRCScoutingHub2016" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FRCScoutingHub2016" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frcscoutinghub2016" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FRCScoutingHub2016" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frcscoutinghub2016" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FRCScoutingHub2016" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frcscoutinghub2016" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FRCScoutingHub2016" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frcscoutinghub2016" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -2419,13 +2556,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/java/org/ncfrcteams/frcscoutinghub2016/matchdata/Team.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16697589">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/res/menu/menu_scout.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8014842">
@@ -2581,13 +2711,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/java/org/ncfrcteams/frcscoutinghub2016/ui/dialogs/ScoutPostMatchDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.038961">
-          <caret line="135" column="36" selection-start-line="135" selection-start-column="36" selection-end-line="135" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.46753246">
@@ -2632,6 +2755,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.53246754">
           <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2639,6 +2763,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.41732284">
           <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2653,6 +2778,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2690,13 +2816,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/java/org/ncfrcteams/frcscoutinghub2016/ui/scout/ScoutMainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36549166">
-          <caret line="138" column="33" selection-start-line="138" selection-start-column="33" selection-end-line="138" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/java/org/ncfrcteams/frcscoutinghub2016/matchdata/database/SuperMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.4025974">
@@ -2708,6 +2827,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20037106">
           <caret line="153" column="61" selection-start-line="153" selection-start-column="61" selection-end-line="153" selection-end-column="61" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2715,6 +2835,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.93320966">
           <caret line="86" column="22" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2755,6 +2876,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7012987">
           <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2784,22 +2906,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/java/org/ncfrcteams/frcscoutinghub2016/ui/hub/HubListFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6011132">
-          <caret line="18" column="78" selection-start-line="18" selection-start-column="78" selection-end-line="18" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/java/org/ncfrcteams/frcscoutinghub2016/ui/hub/HubCreateFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="60" column="35" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/java/org/ncfrcteams/frcscoutinghub2016/ui/scout/ScoutPrematchActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33238637">
@@ -2808,18 +2914,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/java/org/ncfrcteams/frcscoutinghub2016/ui/hub/HubActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="86" column="51" selection-start-line="86" selection-start-column="51" selection-end-line="86" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/java/org/ncfrcteams/frcscoutinghub2016/ui/hub/HubContentsFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7012987">
           <caret line="42" column="38" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/java/org/ncfrcteams/frcscoutinghub2016/ui/dialogs/ScoutPostMatchDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/java/org/ncfrcteams/frcscoutinghub2016/ui/dialogs/HubCreateDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="74" column="44" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/java/org/ncfrcteams/frcscoutinghub2016/ui/scout/ScoutMainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="138" column="33" selection-start-line="138" selection-start-column="33" selection-end-line="138" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/java/org/ncfrcteams/frcscoutinghub2016/ui/hub/HubCreateFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/java/org/ncfrcteams/frcscoutinghub2016/ui/hub/HubListFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="98" column="42" selection-start-line="98" selection-start-column="42" selection-end-line="98" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/java/org/ncfrcteams/frcscoutinghub2016/ui/hub/HubActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5658627">
+          <caret line="105" column="44" selection-start-line="105" selection-start-column="44" selection-end-line="105" selection-end-column="44" />
           <folding />
         </state>
       </provider>
