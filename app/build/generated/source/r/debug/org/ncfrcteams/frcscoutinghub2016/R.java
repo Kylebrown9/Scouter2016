@@ -3171,8 +3171,8 @@ containing a value of this type.
         public static final int h_frag_list=0x7f040029;
         public static final int h_fragment_multi_qr=0x7f04002a;
         public static final int h_fragment_qr=0x7f04002b;
-        public static final int h_listview_contents=0x7f04002c;
-        public static final int h_passwd=0x7f04002d;
+        public static final int h_frag_list_listview =0x7f04002c;
+        public static final int h_dialog_passwd =0x7f04002d;
         public static final int mr_media_route_chooser_dialog=0x7f04002e;
         public static final int mr_media_route_controller_material_dialog_b=0x7f04002f;
         public static final int mr_media_route_list_item=0x7f040030;
@@ -3195,7 +3195,7 @@ containing a value of this type.
         public static final int s_frag_left=0x7f040041;
         public static final int s_frag_mid=0x7f040042;
         public static final int s_frag_right=0x7f040043;
-        public static final int s_post_dialog=0x7f040044;
+        public static final int s_dialog_post =0x7f040044;
         public static final int select_dialog_item_material=0x7f040045;
         public static final int select_dialog_multichoice_material=0x7f040046;
         public static final int select_dialog_singlechoice_material=0x7f040047;

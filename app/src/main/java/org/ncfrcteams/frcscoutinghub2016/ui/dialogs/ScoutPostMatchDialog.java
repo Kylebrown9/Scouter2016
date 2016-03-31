@@ -32,7 +32,7 @@ public class ScoutPostMatchDialog implements View.OnClickListener{
         thisDialog.challenge = challenge;
         thisDialog.climb = climb;
 
-        view = LayoutInflater.from(context).inflate(R.layout.s_post_dialog, null);
+        view = LayoutInflater.from(context).inflate(R.layout.s_dialog_post, null);
         alert.setView(view);
 
         view.findViewById(R.id.challengeNo).setOnClickListener(thisDialog);

@@ -42,11 +42,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="HubActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HubActivity.java" pinned="false" current-in-tab="false">
         <entry file="file:///media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/java/org/ncfrcteams/frcscoutinghub2016/ui/hub/HubActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5658627">
-              <caret line="105" column="44" selection-start-line="105" selection-start-column="44" selection-end-line="105" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="103" column="13" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -76,7 +76,33 @@
         <entry file="file:///media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/java/org/ncfrcteams/frcscoutinghub2016/ui/dialogs/HubCreateDialog.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="74" column="44" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="44" />
+              <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="h_dialog_create.xml" pinned="false" current-in-tab="true">
+        <entry file="file:///media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/res/layout/h_dialog_create.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.31889763">
+              <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="s_dialog_post.xml" pinned="false" current-in-tab="false">
+        <entry file="file:///media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/res/layout/s_dialog_post.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.1612903">
+              <caret line="2" column="62" selection-start-line="2" selection-start-column="62" selection-end-line="3" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -86,7 +112,7 @@
         <entry file="file:///media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/java/org/ncfrcteams/frcscoutinghub2016/ui/hub/HubListFragment.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="98" column="42" selection-start-line="98" selection-start-column="42" selection-end-line="98" selection-end-column="42" />
+              <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -99,6 +125,7 @@
       <list>
         <option value="layoutResourceFile_vertical" />
         <option value="Class" />
+        <option value="layoutResourceFile" />
       </list>
     </option>
   </component>
@@ -2013,6 +2040,7 @@
         <option value="/media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/java/org/ncfrcteams/frcscoutinghub2016/ui/hub/HubCreateFragment.java" />
         <option value="/media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/java/org/ncfrcteams/frcscoutinghub2016/ui/hub/HubListFragment.java" />
         <option value="/media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/java/org/ncfrcteams/frcscoutinghub2016/ui/hub/HubActivity.java" />
+        <option value="/media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/res/layout/h_dialog_create.xml" />
       </list>
     </option>
   </component>
@@ -2151,6 +2179,28 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FRCScoutingHub2016" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -2256,6 +2306,16 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="frcscoutinghub2016" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FRCScoutingHub2016" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -2478,6 +2538,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6572935" sideWeight="0.49545455" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23863636" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864675" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2497,7 +2558,6 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23863636" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864675" sideWeight="0.4909091" order="2" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -2556,13 +2616,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/res/menu/menu_scout.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8014842">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/java/org/ncfrcteams/frcscoutinghub2016/matchdata/Obstacle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2635,23 +2688,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/res/layout/h_passwd.xml">
+    <entry file="file:///media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/res/layout/h_dialog_passwd.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/res/layout/s_post_dialog.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7519685">
-          <caret line="124" column="33" selection-start-line="124" selection-start-column="33" selection-end-line="124" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -2839,7 +2882,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/res/layout/h_listview_contents.xml">
+    <entry file="file:///media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/res/layout/h_frag_list_listview.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
@@ -2930,14 +2973,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/java/org/ncfrcteams/frcscoutinghub2016/ui/dialogs/HubCreateDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="74" column="44" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/java/org/ncfrcteams/frcscoutinghub2016/ui/scout/ScoutMainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2954,18 +2989,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/java/org/ncfrcteams/frcscoutinghub2016/ui/hub/HubListFragment.java">
+    <entry file="file:///media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/java/org/ncfrcteams/frcscoutinghub2016/ui/hub/HubActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="98" column="42" selection-start-line="98" selection-start-column="42" selection-end-line="98" selection-end-column="42" />
+          <caret line="103" column="13" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:///media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/java/org/ncfrcteams/frcscoutinghub2016/ui/hub/HubActivity.java">
+    <entry file="file:///media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/java/org/ncfrcteams/frcscoutinghub2016/ui/hub/HubListFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5658627">
-          <caret line="105" column="44" selection-start-line="105" selection-start-column="44" selection-end-line="105" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/java/org/ncfrcteams/frcscoutinghub2016/ui/dialogs/HubCreateDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/res/layout/s_dialog_post.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.1612903">
+          <caret line="2" column="62" selection-start-line="2" selection-start-column="62" selection-end-line="3" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/res/layout/h_dialog_create.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31889763">
+          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
           <folding />
         </state>
       </provider>

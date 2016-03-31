@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import org.ncfrcteams.frcscoutinghub2016.R;
 import org.ncfrcteams.frcscoutinghub2016.matchdata.schedule.Match;
@@ -24,13 +23,13 @@ public class DatabaseAdapter extends ArrayAdapter<Match> implements Schedule.Sch
     private DatabaseListener listener;
 
     public DatabaseAdapter(Context context, DatabaseListener listener, ArrayList<Match> matches) {
-        super(context, R.layout.h_listview_contents, matches);
+        super(context, R.layout.h_frag_list_listview, matches);
         this.context = context;
         this.listener = listener;
     }
 
     public DatabaseAdapter(Context context, DatabaseListener listener) {
-        super(context, R.layout.h_listview_contents, new ArrayList<Match>());
+        super(context, R.layout.h_frag_list_listview, new ArrayList<Match>());
         this.context = context;
         this.listener = listener;
     }
@@ -44,7 +43,7 @@ public class DatabaseAdapter extends ArrayAdapter<Match> implements Schedule.Sch
     @Override
     public View getView(int position, View view, ViewGroup parent) {
         if (view == null) {
-            view = LayoutInflater.from(context).inflate(R.layout.h_listview_contents, parent, false);
+            view = LayoutInflater.from(context).inflate(R.layout.h_frag_list_listview, parent, false);
         }
 
         Match match = getItem(position);
