@@ -39,7 +39,7 @@ public class ScoutPrematchActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-
+        backpress = false;
     }
 
     @Override
