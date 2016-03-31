@@ -11,7 +11,7 @@ public class Schedule {
     private List<MatchDescriptor> matchDescriptorList;
     private List<ScheduleEntry> scheduleEntries;
     private List<ScheduleEntry> validEntries;
-    
+
     private ScheduleChangeListener scheduleChangeListener = null;
 
     //****************************************UI Methods*********************************

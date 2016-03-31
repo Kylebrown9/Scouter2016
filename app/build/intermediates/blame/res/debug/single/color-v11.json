@@ -1,18 +1,10 @@
 [
     {
-        "merged": "/home/pavan/Documents/AndroidStudioProjects/FRCScoutingHub2016/C:\\Users\\Admin\\AndroidStudioProjects\\FRCScoutingHub2016\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
-        "source": "/home/pavan/Documents/AndroidStudioProjects/FRCScoutingHub2016/C:\\Users\\Admin\\AndroidStudioProjects\\FRCScoutingHub2016\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
+        "merged": "C:\\Users\\Admin\\github\\Scouter2016\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
+        "source": "C:\\Users\\Admin\\github\\Scouter2016\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
     },
     {
-        "merged": "/media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
-        "source": "/media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
-    },
-    {
-        "merged": "/home/pavan/Documents/AndroidStudioProjects/FRCScoutingHub2016/C:\\Users\\Admin\\AndroidStudioProjects\\FRCScoutingHub2016\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
-        "source": "/home/pavan/Documents/AndroidStudioProjects/FRCScoutingHub2016/C:\\Users\\Admin\\AndroidStudioProjects\\FRCScoutingHub2016\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
-    },
-    {
-        "merged": "/media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
-        "source": "/media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+        "merged": "C:\\Users\\Admin\\github\\Scouter2016\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
+        "source": "C:\\Users\\Admin\\github\\Scouter2016\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
     }
 ]

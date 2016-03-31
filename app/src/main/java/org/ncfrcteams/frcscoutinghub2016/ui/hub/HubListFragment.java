@@ -53,13 +53,13 @@ public class HubListFragment extends Fragment implements AdapterView.OnItemClick
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id){
-        String item = myListAdapter.getItem(position).getText();
+        String item = myListAdapter.getItem(position).toString();
         Toast.makeText(getActivity(), item, Toast.LENGTH_SHORT).show();
     }
 
     @Override
     public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-        String item = myListAdapter.getItem(position).getText();
+        String item = myListAdapter.getItem(position).toString();
         Toast.makeText(getActivity(), item + " long", Toast.LENGTH_SHORT).show();
         int[] teams = {1991,22,45553,5134,643,833};
         mySchedule.add(new MatchDescriptor(getContext(), 5, teams));

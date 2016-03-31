@@ -29,11 +29,11 @@ public class HubCreateDialog implements View.OnClickListener {
         final AlertDialog.Builder alert = new AlertDialog.Builder(context);
         final HubCreateDialog thisDialog = this;
 
-        view = LayoutInflater.from(context).inflate(R.layout.s_post_dialog, null);
+        view = LayoutInflater.from(context).inflate(R.layout.h_dialog_create, null);
         alert.setView(view);
 
-        view.findViewById(R.id.).setOnClickListener(thisDialog);
-        thisDialog.phonenum = (EditText) view.findViewById(R.id.);
+        //view.findViewById(R.id.pickfile).setOnClickListener(thisDialog);
+        thisDialog.phonenum = (EditText) view.findViewById(R.id.phonenum);
 
         final HubCreateDialogListener dialogListener = listener;
 
