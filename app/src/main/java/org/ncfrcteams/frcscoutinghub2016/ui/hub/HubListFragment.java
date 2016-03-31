@@ -12,16 +12,15 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import org.ncfrcteams.frcscoutinghub2016.R;
-import org.ncfrcteams.frcscoutinghub2016.matchdata.schedule.Match;
+import org.ncfrcteams.frcscoutinghub2016.matchdata.schedule.MatchDescriptor;
 import org.ncfrcteams.frcscoutinghub2016.matchdata.schedule.Schedule;
 import org.ncfrcteams.frcscoutinghub2016.ui.DatabaseAdapter;
-
 
 public class HubListFragment extends Fragment implements AdapterView.OnItemClickListener,
         AdapterView.OnItemLongClickListener, DatabaseAdapter.DatabaseListener{
 
     private OnHubListFragListener mListener;
-    public Schedule mySchedule;
+    public static Schedule mySchedule;
     public DatabaseAdapter myListAdapter;
     ListView hubListView;
 
@@ -41,11 +40,7 @@ public class HubListFragment extends Fragment implements AdapterView.OnItemClick
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.h_frag_list, container, false);
 
-        Match m1 = Match.getBlank(1, true);
-        Match m2 = Match.getBlank(2,false);
-        Match[] matches ={m1,m2,Match.getBlank(3,true)};
-
-        myListAdapter = new DatabaseAdapter(getContext(), this, matches);
+        myListAdapter = new DatabaseAdapter(getContext(), this);
         mySchedule = new Schedule();
         mySchedule.setScheduleChangeListener(myListAdapter);
 
@@ -53,6 +48,7 @@ public class HubListFragment extends Fragment implements AdapterView.OnItemClick
         hubListView.setAdapter(myListAdapter);
         hubListView.setOnItemClickListener(this);
         hubListView.setOnItemLongClickListener(this);
+        hubListView.setEmptyView(view.findViewById(R.id.empty));
 
         return view;
     }
@@ -61,13 +57,14 @@ public class HubListFragment extends Fragment implements AdapterView.OnItemClick
     public void onItemClick(AdapterView<?> parent, View view, int position, long id){
         String item = myListAdapter.getItem(position).getText();
         Toast.makeText(getActivity(), item, Toast.LENGTH_SHORT).show();
-        onListChange();
     }
 
     @Override
     public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
         String item = myListAdapter.getItem(position).getText();
         Toast.makeText(getActivity(), item + " long", Toast.LENGTH_SHORT).show();
+        int[] teams = {1991,22,45553,5134,643,833};
+        mySchedule.add(new MatchDescriptor(getContext(), 5, teams));
         return true;
     }
 
@@ -90,9 +87,7 @@ public class HubListFragment extends Fragment implements AdapterView.OnItemClick
 
     @Override
     public void onListChange() {
-        Toast.makeText(getContext(), "invalidate", Toast.LENGTH_SHORT).show();
-        hubListView.setAdapter(myListAdapter);
-        hubListView.refreshDrawableState();
+        //unnecessary listener called whenever ANYTHING changes (auto push to server?)
     }
 
     public interface OnHubListFragListener {

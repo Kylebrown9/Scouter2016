@@ -12,7 +12,7 @@ import android.widget.Toast;
 import org.ncfrcteams.frcscoutinghub2016.R;
 import org.ncfrcteams.frcscoutinghub2016.communication.http.PostClass;
 import org.ncfrcteams.frcscoutinghub2016.communication.sms_server.SmsReceiver;
-import org.ncfrcteams.frcscoutinghub2016.matchdata.database.Database;
+import org.ncfrcteams.frcscoutinghub2016.matchdata.schedule.MatchDescriptor;
 import org.ncfrcteams.frcscoutinghub2016.ui.CustomPageAdapter;
 import org.ncfrcteams.frcscoutinghub2016.ui.CustomViewPager;
 
@@ -24,9 +24,9 @@ public class HubActivity extends AppCompatActivity implements HubContentsFragmen
     public Toolbar toolbar;
     public CustomViewPager hubViewPager;
     public CustomPageAdapter myPageAdapter;
+    public ArrayList<Fragment> fragments;
     public String user = "test";
     public String pass = "test";
-    public Database database = new Database();
     public SmsReceiver smsReceiver;
 
     @Override
@@ -38,11 +38,12 @@ public class HubActivity extends AppCompatActivity implements HubContentsFragmen
         hubViewPager.setPagingEnabled(false);
         setSupportActionBar(toolbar);
 
-        ArrayList<Fragment> fragments = new ArrayList<>();
-        ArrayList<String> fragTitles = new ArrayList<>();
+        fragments = new ArrayList<>();
         fragments.add(HubContentsFragment.newInstance("Create"));
         fragments.add(HubListFragment.newInstance());
         fragments.add(HubContentsFragment.newInstance("Details"));
+
+        ArrayList<String> fragTitles = new ArrayList<>();
         fragTitles.add("Create");
         fragTitles.add("Matches");
         fragTitles.add("Details");
@@ -76,6 +77,10 @@ public class HubActivity extends AppCompatActivity implements HubContentsFragmen
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.hubnew:
+
+                int[] teams = {1991,22,45553,5134,643,833};
+                ((HubListFragment)fragments.get(1)).mySchedule.add(new MatchDescriptor(this, 1, teams));
+
                 hubViewPager.setCurrentItem(0);
                 return true;
             case R.id.hubview:
@@ -87,7 +92,7 @@ public class HubActivity extends AppCompatActivity implements HubContentsFragmen
                     user = "4828";
                     pass = "RoboEagles4828";
                 }
-                sendPostRequest(user, pass, database.getString());
+                sendPostRequest(user, pass, "hhh");
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

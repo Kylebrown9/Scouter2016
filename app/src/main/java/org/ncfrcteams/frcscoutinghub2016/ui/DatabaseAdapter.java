@@ -6,11 +6,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.ncfrcteams.frcscoutinghub2016.R;
 import org.ncfrcteams.frcscoutinghub2016.matchdata.schedule.Match;
 import org.ncfrcteams.frcscoutinghub2016.matchdata.schedule.Schedule;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -21,8 +23,14 @@ public class DatabaseAdapter extends ArrayAdapter<Match> implements Schedule.Sch
     private Context context;
     private DatabaseListener listener;
 
-    public DatabaseAdapter(Context context, DatabaseListener listener, Match[] matches) {
+    public DatabaseAdapter(Context context, DatabaseListener listener, ArrayList<Match> matches) {
         super(context, R.layout.h_listview_contents, matches);
+        this.context = context;
+        this.listener = listener;
+    }
+
+    public DatabaseAdapter(Context context, DatabaseListener listener) {
+        super(context, R.layout.h_listview_contents, new ArrayList<Match>());
         this.context = context;
         this.listener = listener;
     }
@@ -48,7 +56,7 @@ public class DatabaseAdapter extends ArrayAdapter<Match> implements Schedule.Sch
     }
 
     @Override
-    public void notifyScheduleChanges(List<Match> matches) {
+    public synchronized void notifyScheduleChanges(List<Match> matches) {
         this.clear();
         this.addAll(matches);
     }
