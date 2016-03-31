@@ -1,7 +1,6 @@
 package org.ncfrcteams.frcscoutinghub2016.ui.hub;
 
 import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -10,14 +9,13 @@ import android.view.ViewGroup;
 
 import org.ncfrcteams.frcscoutinghub2016.R;
 
-public class HubCreateFragment extends Fragment {
+public class HubCreateFragment extends Fragment implements View.OnClickListener{
 
-    private OnFragmentInteractionListener mListener;
-
+    private HubCreateFragListener mListener;
     public HubCreateFragment() {
     }
 
-    public static HubCreateFragment newInstance(String param1, String param2) {
+    public static HubCreateFragment newInstance() {
         return new HubCreateFragment();
     }
 
@@ -30,25 +28,19 @@ public class HubCreateFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.h_frag_create, container, false);
 
-        view.invalidate();
+        view.findViewById(R.id.createClickMe).setOnClickListener(this);
 
         return view;
     }
 
-    public void onButtonPressed(Uri uri) {
-        if (mListener != null) {
-            mListener.onFragmentInteraction(uri);
-        }
-    }
 
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        if (context instanceof OnFragmentInteractionListener) {
-            mListener = (OnFragmentInteractionListener) context;
+        if (context instanceof HubCreateFragListener) {
+            mListener = (HubCreateFragListener) context;
         } else {
-            throw new RuntimeException(context.toString()
-                    + " must implement OnFragmentInteractionListener");
+            throw new RuntimeException(context.toString() + " must implement HubCreateFragListener");
         }
     }
 
@@ -58,7 +50,25 @@ public class HubCreateFragment extends Fragment {
         mListener = null;
     }
 
-    public interface OnFragmentInteractionListener {
-        void onFragmentInteraction(Uri uri);
+    @Override
+    public void onClick(View view){
+        switch(view.getId()){
+            case R.id.createClickMe:
+                int[] teams = {1991,22,45553,5134,643,833};
+                mListener.addNewMatch(teams, 3);
+                break;
+            case R.id.rightLowGoal:
+                break;
+            case R.id.rightSuccess:
+                break;
+            case R.id.rightFailure:
+                break;
+            default:
+                break;
+        }
+    }
+
+    public interface HubCreateFragListener {
+        void addNewMatch(int[] teams, int matchnum);
     }
 }

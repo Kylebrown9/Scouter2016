@@ -1,7 +1,6 @@
 package org.ncfrcteams.frcscoutinghub2016.ui.hub;
 
 import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -15,7 +14,7 @@ public class HubContentsFragment extends Fragment {
     private static final String ARG_PARAM1 = "title";
     private String title;
     private TextView hubfrag1;
-    private OnHubContentsFragListener mListener;
+    private HubContentsFragListener mListener;
 
     public HubContentsFragment() {
     }
@@ -47,11 +46,11 @@ public class HubContentsFragment extends Fragment {
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        if (context instanceof OnHubContentsFragListener) {
-            mListener = (OnHubContentsFragListener) context;
+        if (context instanceof HubContentsFragListener) {
+            mListener = (HubContentsFragListener) context;
         } else {
             throw new RuntimeException(context.toString()
-                    + " must implement OnHubContentsFragListener");
+                    + " must implement HubContentsFragListener");
         }
     }
 
@@ -61,7 +60,7 @@ public class HubContentsFragment extends Fragment {
         mListener = null;
     }
 
-    public interface OnHubContentsFragListener {
-        void onHubContentFragInteraction(Uri uri);
+    public interface HubContentsFragListener {
+
     }
 }

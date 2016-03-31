@@ -1,7 +1,6 @@
 package org.ncfrcteams.frcscoutinghub2016.ui.hub;
 
 import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -17,9 +16,9 @@ import org.ncfrcteams.frcscoutinghub2016.matchdata.schedule.Schedule;
 import org.ncfrcteams.frcscoutinghub2016.ui.DatabaseAdapter;
 
 public class HubListFragment extends Fragment implements AdapterView.OnItemClickListener,
-        AdapterView.OnItemLongClickListener, DatabaseAdapter.DatabaseListener{
+        AdapterView.OnItemLongClickListener, DatabaseAdapter.DatabaseListener {
 
-    private OnHubListFragListener mListener;
+    private HubListFragListener mListener;
     public static Schedule mySchedule;
     public DatabaseAdapter myListAdapter;
     ListView hubListView;
@@ -70,11 +69,10 @@ public class HubListFragment extends Fragment implements AdapterView.OnItemClick
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        if (context instanceof OnHubListFragListener) {
-            mListener = (OnHubListFragListener) context;
+        if (context instanceof HubListFragListener) {
+            mListener = (HubListFragListener) context;
         } else {
-            throw new RuntimeException(context.toString()
-                    + " must implement OnHubListFragListener");
+            throw new RuntimeException(context.toString() + " must implement HubListFragListener");
         }
     }
 
@@ -86,11 +84,20 @@ public class HubListFragment extends Fragment implements AdapterView.OnItemClick
 
     @Override
     public void onListChange() {
-        //unnecessary listener called whenever ANYTHING changes (auto push to server?)
+        //called whenever ANYTHING changes
+        mListener.autopush(); //TODO auto push to server?
     }
 
-    public interface OnHubListFragListener {
-        void onHubListFragInteraction(Uri uri);
+    public void addNewMatch(int[] teams, int matchnum){
+        mySchedule.add(new MatchDescriptor(getContext(), matchnum, teams));
+    }
+
+    public String getDatabase() {
+        return "asdfasdfasdf"; //TODO generate csv string from mySchedule
+    }
+
+    public interface HubListFragListener {
+        void autopush();
     }
 
 }

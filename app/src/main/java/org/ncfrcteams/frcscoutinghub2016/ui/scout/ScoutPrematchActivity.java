@@ -52,6 +52,7 @@ public class ScoutPrematchActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.action_settings) {
+            //TODO add settings
             return true;
         }
         return super.onOptionsItemSelected(item);
@@ -80,23 +81,38 @@ public class ScoutPrematchActivity extends AppCompatActivity {
     }
 
     public void launchScouter(View view) {
-        IntentIntegrator integrator = new IntentIntegrator(this);
-        integrator.initiateScan();
+        boolean otherapp = false; //TODO detect if qrdroid app available
+        if(otherapp) {
+            //TODO launch qrdroid app intent -- http://qrdroid.com/android-developers/
+        } else{
+            IntentIntegrator integrator = new IntentIntegrator(this);
+            integrator.initiateScan();
+        }
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        IntentResult scanResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
-        if (scanResult != null) {
+        String matchdata = "no data";
+
+        //result from barcode scanner app
+        IntentResult brscanResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
+        if (brscanResult != null) {
+            matchdata = brscanResult.getContents();
+        }
+
+        //TODO result from another app possibly
+
+        if(matchdata.split(",").length == 12){
             Intent intent = new Intent(this, ScoutMainActivity.class);
-            intent.putExtra("Match Setup", scanResult.getContents());
+            intent.putExtra("Match Setup", matchdata);
             intent.putExtra("Orientation", orientation);
             startActivity(intent);
             finish();
         } else {
-            Toast.makeText(getApplicationContext(), "Failed Scan", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Failed Scan", Toast.LENGTH_SHORT).show();
         }
+
     }
 
     public void launchHub(View view){

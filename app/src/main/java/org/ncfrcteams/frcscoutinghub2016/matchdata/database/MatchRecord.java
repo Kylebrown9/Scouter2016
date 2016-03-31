@@ -152,8 +152,7 @@ public class MatchRecord extends SuperMap<String, Integer>{
     }
 
     public synchronized String findBarrierKey(String button){
-        String mykey = button;
-        return mykey + (get("Teleop Active").equals(0) ? " Auto" : " Tele");
+        return button + (get("Teleop Active").equals(0) ? " Auto" : " Tele");
     }
 
     public synchronized void increment(String button, int val) {

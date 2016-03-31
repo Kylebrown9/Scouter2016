@@ -17,6 +17,7 @@
         android:layout_height="wrap_content"
         android:text="No Matches"
         android:textSize="30sp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/empty"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
