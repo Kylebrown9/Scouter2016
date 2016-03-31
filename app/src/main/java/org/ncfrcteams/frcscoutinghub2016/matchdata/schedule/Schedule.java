@@ -9,7 +9,9 @@ import java.util.List;
  */
 public class Schedule {
     private List<MatchDescriptor> matchDescriptorList;
-    private List<Match> matches;
+    private List<ScheduleEntry> scheduleEntries;
+    private List<ScheduleEntry> validEntries;
+    
     private ScheduleChangeListener scheduleChangeListener = null;
 
     //****************************************UI Methods*********************************
@@ -19,7 +21,8 @@ public class Schedule {
      */
     public Schedule() {
         matchDescriptorList = new ArrayList<>();
-        matches = new ArrayList<>();
+        scheduleEntries = new ArrayList<>();
+        validEntries = new ArrayList<>();
     }
 
     /**
@@ -53,44 +56,56 @@ public class Schedule {
     /**
      * @return an up to date copy of the scheduleEntries list
      */
-    public synchronized List<Match> getMatches() {
-        return new ArrayList<>(matches);
+    public synchronized List<ScheduleEntry> getScheduleEntries() {
+        return new ArrayList<>(scheduleEntries);
     }
 
     private void update() {
         Collections.sort(matchDescriptorList);
-        matches.clear();
+        scheduleEntries.clear();
 
-        int lastNum = 1;
+        boolean lastMatchWasQual = true;
+
+        int lastNum = 0;
         int currNum;
-        Match newMatch;
-        boolean lastMatchWasQual = matchDescriptorList.get(0).isQual();
+        ScheduleEntry newEntry;
+
+        int index;
 
         for(MatchDescriptor matchDescriptor : matchDescriptorList) {
             currNum = matchDescriptor.getMatchNum();
 
             if(!matchDescriptor.isQual() && lastMatchWasQual) {
-                lastNum = 1;
+                lastNum = 0;
             }
 
-            for(int i=lastNum; i<currNum; i++) {
-                newMatch = Match.getBlank(i,matchDescriptor.isQual());
-                matches.add(newMatch);
+            for(int i=lastNum+1; i<currNum; i++) {
+                newEntry = ScheduleEntry.getBlank(i,matchDescriptor.isQual());
+                scheduleEntries.add(newEntry);
             }
 
-            newMatch = Match.getFromDescriptor(matchDescriptor);
-            matches.add(newMatch);
+            newEntry = ScheduleEntry.getFromDescriptor(matchDescriptor);
+            index = validEntries.indexOf(newEntry);
+
+            if(index == -1) {
+                validEntries.add(newEntry);
+                index = validEntries.size()-1;
+            }
+
+            scheduleEntries.add(validEntries.get(index));
+
+            validEntries.add(newEntry);
 
             lastNum = currNum;
             lastMatchWasQual = matchDescriptor.isQual();
         }
 
         if(scheduleChangeListener != null) {
-            scheduleChangeListener.notifyScheduleChanges(getMatches());
+            scheduleChangeListener.notifyScheduleChanges(getScheduleEntries());
         }
     }
 
     public interface ScheduleChangeListener {
-        void notifyScheduleChanges(List<Match> matches);
+        void notifyScheduleChanges(List<ScheduleEntry> scheduleEntries);
     }
 }
