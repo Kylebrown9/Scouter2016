@@ -101,7 +101,7 @@ public class ScoutPrematchActivity extends AppCompatActivity {
             matchdata = brscanResult.getContents();
         }
 
-        //TODO result from another app possibly
+        //TODO get result from another app
 
         if(matchdata.split(",").length == 12){
             Intent intent = new Intent(this, ScoutMainActivity.class);

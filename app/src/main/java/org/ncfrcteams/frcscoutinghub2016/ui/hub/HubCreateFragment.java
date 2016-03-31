@@ -54,6 +54,7 @@ public class HubCreateFragment extends Fragment implements View.OnClickListener{
     public void onClick(View view){
         switch(view.getId()){
             case R.id.createClickMe:
+                //TODO create new match dialog
                 int[] teams = {1991,22,45553,5134,643,833};
                 mListener.addNewMatch(teams, 3);
                 break;

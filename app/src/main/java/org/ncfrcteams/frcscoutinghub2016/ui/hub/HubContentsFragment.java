@@ -40,6 +40,7 @@ public class HubContentsFragment extends Fragment {
         View view = inflater.inflate(R.layout.h_frag_contents, container, false);
         hubfrag1 = (TextView) view.findViewById(R.id.hubfrag1);
         hubfrag1.setText(title);
+        //TODO Make this entire edit Match show QR fragment
         return view;
     }
 
