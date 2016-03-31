@@ -1,18 +1,10 @@
 [
     {
-        "merged": "/home/pavan/Documents/AndroidStudioProjects/FRCScoutingHub2016/C:\\Users\\Admin\\AndroidStudioProjects\\FRCScoutingHub2016\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_out.xml",
-        "source": "/home/pavan/Documents/AndroidStudioProjects/FRCScoutingHub2016/C:\\Users\\Admin\\AndroidStudioProjects\\FRCScoutingHub2016\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.2.0\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
+        "merged": "C:\\Users\\Admin\\github\\Scouter2016\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_in.xml",
+        "source": "C:\\Users\\Admin\\github\\Scouter2016\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.2.0\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
     },
     {
-        "merged": "/home/pavan/Documents/AndroidStudioProjects/FRCScoutingHub2016/C:\\Users\\Admin\\AndroidStudioProjects\\FRCScoutingHub2016\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_in.xml",
-        "source": "/home/pavan/Documents/AndroidStudioProjects/FRCScoutingHub2016/C:\\Users\\Admin\\AndroidStudioProjects\\FRCScoutingHub2016\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.2.0\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
-    },
-    {
-        "merged": "/media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_out.xml",
-        "source": "/media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/build/intermediates/exploded-aar/com.android.support/design/23.2.1/res/anim-v21/design_bottom_sheet_slide_out.xml"
-    },
-    {
-        "merged": "/media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_in.xml",
-        "source": "/media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/build/intermediates/exploded-aar/com.android.support/design/23.2.1/res/anim-v21/design_bottom_sheet_slide_in.xml"
+        "merged": "C:\\Users\\Admin\\github\\Scouter2016\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_out.xml",
+        "source": "C:\\Users\\Admin\\github\\Scouter2016\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.2.0\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
     }
 ]

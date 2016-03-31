@@ -1,10 +1,6 @@
 [
     {
-        "merged": "/home/pavan/Documents/AndroidStudioProjects/FRCScoutingHub2016/C:\\Users\\Admin\\AndroidStudioProjects\\FRCScoutingHub2016\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\place_autocomplete_fragment.xml",
-        "source": "/home/pavan/Documents/AndroidStudioProjects/FRCScoutingHub2016/C:\\Users\\Admin\\AndroidStudioProjects\\FRCScoutingHub2016\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\8.4.0\\res\\layout-v21\\place_autocomplete_fragment.xml"
-    },
-    {
-        "merged": "/media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/build/intermediates/res/merged/debug/layout-v21/place_autocomplete_fragment.xml",
-        "source": "/media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/res/layout-v21/place_autocomplete_fragment.xml"
+        "merged": "C:\\Users\\Admin\\github\\Scouter2016\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\place_autocomplete_fragment.xml",
+        "source": "C:\\Users\\Admin\\github\\Scouter2016\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\8.4.0\\res\\layout-v21\\place_autocomplete_fragment.xml"
     }
 ]

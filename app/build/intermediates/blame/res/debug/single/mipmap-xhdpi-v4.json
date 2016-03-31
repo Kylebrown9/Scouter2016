@@ -1,18 +1,10 @@
 [
     {
-        "merged": "/home/pavan/Documents/AndroidStudioProjects/FRCScoutingHub2016/C:\\Users\\Admin\\AndroidStudioProjects\\FRCScoutingHub2016\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\pencil.png",
-        "source": "/home/pavan/Documents/AndroidStudioProjects/FRCScoutingHub2016/C:\\Users\\Admin\\AndroidStudioProjects\\FRCScoutingHub2016\\app\\src\\main\\res\\mipmap-xhdpi\\pencil.png"
+        "merged": "C:\\Users\\Admin\\github\\Scouter2016\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\pencil.png",
+        "source": "C:\\Users\\Admin\\github\\Scouter2016\\app\\src\\main\\res\\mipmap-xhdpi\\pencil.png"
     },
     {
-        "merged": "/media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/ic_launcher.png",
-        "source": "/media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
-    },
-    {
-        "merged": "/media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/pencil.png",
-        "source": "/media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/res/mipmap-xhdpi/pencil.png"
-    },
-    {
-        "merged": "/home/pavan/Documents/AndroidStudioProjects/FRCScoutingHub2016/C:\\Users\\Admin\\AndroidStudioProjects\\FRCScoutingHub2016\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\ic_launcher.png",
-        "source": "/home/pavan/Documents/AndroidStudioProjects/FRCScoutingHub2016/C:\\Users\\Admin\\AndroidStudioProjects\\FRCScoutingHub2016\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\Admin\\github\\Scouter2016\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\Admin\\github\\Scouter2016\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     }
 ]
