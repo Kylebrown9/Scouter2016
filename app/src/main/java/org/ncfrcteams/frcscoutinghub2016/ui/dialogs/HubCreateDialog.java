@@ -39,8 +39,12 @@ public class HubCreateDialog implements View.OnClickListener {
 
         DialogInterface.OnClickListener positiveListener = new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
-
-                dialogListener.onNewMatchCreate(thisDialog.teams, 25, true, thisDialog.phonenum.getText().toString());
+                int[] newteams = {1000,2000,3000,4000,5000,6000};
+                thisDialog.teams = newteams;
+                thisDialog.matchnum = 2;
+                thisDialog.isQual = true;
+                dialogListener.onNewMatchCreate(thisDialog.teams, thisDialog.matchnum,
+                        thisDialog.isQual, thisDialog.phonenum.getText().toString());
             }
         };
 
