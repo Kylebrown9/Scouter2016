@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/build/intermediates/res/merged/debug/menu/menu_hub.xml",
+        "source": "/media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/res/menu/menu_hub.xml"
+    },
+    {
+        "merged": "/home/pavan/Documents/AndroidStudioProjects/FRCScoutingHub2016/C:\\Users\\Admin\\AndroidStudioProjects\\FRCScoutingHub2016\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_hub.xml",
+        "source": "/home/pavan/Documents/AndroidStudioProjects/FRCScoutingHub2016/C:\\Users\\Admin\\AndroidStudioProjects\\FRCScoutingHub2016\\app\\src\\main\\res\\menu\\menu_hub.xml"
+    },
+    {
+        "merged": "/home/pavan/Documents/AndroidStudioProjects/FRCScoutingHub2016/C:\\Users\\Admin\\AndroidStudioProjects\\FRCScoutingHub2016\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_main.xml",
+        "source": "/home/pavan/Documents/AndroidStudioProjects/FRCScoutingHub2016/C:\\Users\\Admin\\AndroidStudioProjects\\FRCScoutingHub2016\\app\\src\\main\\res\\menu\\menu_main.xml"
+    },
+    {
+        "merged": "/media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/build/intermediates/res/merged/debug/menu/menu_scout.xml",
+        "source": "/media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/res/menu/menu_scout.xml"
+    },
+    {
+        "merged": "/media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/build/intermediates/res/merged/debug/menu/menu_main.xml",
+        "source": "/media/pavan/Windows/Users/Pavan/Documents/Software/AndroidStudioProjects/FRCScoutingHub2016/app/src/main/res/menu/menu_main.xml"
+    },
+    {
+        "merged": "/home/pavan/Documents/AndroidStudioProjects/FRCScoutingHub2016/C:\\Users\\Admin\\AndroidStudioProjects\\FRCScoutingHub2016\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_scout.xml",
+        "source": "/home/pavan/Documents/AndroidStudioProjects/FRCScoutingHub2016/C:\\Users\\Admin\\AndroidStudioProjects\\FRCScoutingHub2016\\app\\src\\main\\res\\menu\\menu_scout.xml"
+    }
+]
