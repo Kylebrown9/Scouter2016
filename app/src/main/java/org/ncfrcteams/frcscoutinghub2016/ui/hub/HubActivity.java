@@ -110,6 +110,7 @@ public class HubActivity extends AppCompatActivity implements HubContentsFragmen
 
     @Override
     public void onHubListFragInteraction(Uri uri) {
+
     }
 
     public void sendPostRequest(String user, String pass, String data) {

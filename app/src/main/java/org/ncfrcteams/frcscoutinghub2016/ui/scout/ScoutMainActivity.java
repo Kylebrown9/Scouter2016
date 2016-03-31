@@ -137,7 +137,9 @@ public class ScoutMainActivity extends AppCompatActivity implements ScoutFragLef
 
     @Override
     public void onBackPressed() {
-        Toast.makeText(getApplicationContext(), ":)", Toast.LENGTH_SHORT).show();
+        String text = myMatchRecord.undo();
+        updateFragments();
+        Toast.makeText(getApplicationContext(), text, Toast.LENGTH_SHORT).show();
     }
 
     @Override

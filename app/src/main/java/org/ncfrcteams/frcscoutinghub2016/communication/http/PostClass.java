@@ -33,9 +33,11 @@ public class PostClass extends AsyncTask<String, Void, Void> {
     private String data;
     private String boundary = "===" + System.currentTimeMillis() + "===";
 
-    public PostClass(Context c, String urlstring, String user,
+    //TODO make constructor use arrays of POST vars and FILES
+
+    public PostClass(Context context, String urlstring, String user,
                      String pass, String data, boolean pretty){
-        this.context = c;
+        this.context = context;
         this.urlstring = urlstring;
         this.pretty = pretty;
         this.user = user;
@@ -66,8 +68,9 @@ public class PostClass extends AsyncTask<String, Void, Void> {
             OutputStream outputStream = connection.getOutputStream();
             PrintWriter writer = new PrintWriter(new OutputStreamWriter(outputStream, "UTF-8"), true);
 
-            //add team=user
+            //TODO use for each loops for all of the POST vars and FILES
 
+            //add team=user
             writer.append("--").append(boundary).append("\r\n");
             writer.append("Content-Disposition: form-data; name=\"team\"").append("\r\n");
             writer.append("Content-Type: text/plain; charset=UTF-8").append("\r\n\r\n");
@@ -98,25 +101,10 @@ public class PostClass extends AsyncTask<String, Void, Void> {
             writer.append(data).append("\r\n"); //if file type is plain text
             writer.flush();
 
-            //stream file contents
-            /*
-            FileInputStream inputStream = new FileInputStream(datafile);
-            byte[] buffer = new byte[4096];
-            int bytesRead = -1;
-            while ((bytesRead = inputStream.read(buffer)) != -1) {
-                outputStream.write(buffer, 0, bytesRead);
-            }
-            outputStream.flush();
-            inputStream.close();
-            writer.append("\r\n");
-            writer.flush();
-            */
-
             //close writer
             writer.append("\r\n").flush();
             writer.append("--").append(boundary).append("--").append("\r\n");
             writer.close();
-
 
             int responseCode = connection.getResponseCode();
 

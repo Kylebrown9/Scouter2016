@@ -19,9 +19,10 @@ import org.ncfrcteams.frcscoutinghub2016.ui.hub.HubActivity;
 
 public class ScoutPrematchActivity extends AppCompatActivity {
 
-    private int orientation = 1;
+    private int orientation;
     private ImageView orientation1;
     private ImageView orientation2;
+    private boolean backpress;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,8 +30,16 @@ public class ScoutPrematchActivity extends AppCompatActivity {
         setContentView(R.layout.s_activity_prematch);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        orientation = 1;
         orientation1 = (ImageView) findViewById(R.id.orientation1);
         orientation2 = (ImageView) findViewById(R.id.orientation2);
+        backpress = false;
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
     }
 
     @Override
@@ -50,7 +59,12 @@ public class ScoutPrematchActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Toast.makeText(this, ":)", Toast.LENGTH_SHORT).show();
+        if(backpress) {
+            super.onBackPressed();
+        } else{
+            backpress = true;
+            Toast.makeText(this, "Press Back Again To Exit", Toast.LENGTH_SHORT).show();
+        }
     }
 
     public void orientation1Selected(View view){

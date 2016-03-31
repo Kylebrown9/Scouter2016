@@ -34,15 +34,14 @@ public class HubListFragment extends Fragment implements AdapterView.OnItemClick
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        myListAdapter = new DatabaseAdapter(getContext(), this);
+        mySchedule = new Schedule();
+        mySchedule.setScheduleChangeListener(myListAdapter);
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.h_frag_list, container, false);
-
-        myListAdapter = new DatabaseAdapter(getContext(), this);
-        mySchedule = new Schedule();
-        mySchedule.setScheduleChangeListener(myListAdapter);
 
         hubListView = (ListView) view.findViewById(R.id.hubListView);
         hubListView.setAdapter(myListAdapter);
