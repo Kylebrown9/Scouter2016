@@ -70,16 +70,15 @@ public class ScoutPrematchActivity extends AppCompatActivity {
         integrator.initiateScan();
     }
 
-    public void onActivityResult(int requestCode, int resultCode, Intent intent) {
-        Toast.makeText(getApplicationContext(), "yay...", Toast.LENGTH_SHORT).show();
-        IntentResult scanResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
-        Toast.makeText(getApplicationContext(), "yay?", Toast.LENGTH_SHORT).show();
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        //super.onActivityResult(requestCode, resultCode, data);
+        IntentResult scanResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
         if (scanResult != null) {
-            Toast.makeText(getApplicationContext(), "YAY", Toast.LENGTH_SHORT).show();
-            Intent intent2 = new Intent(this, ScoutMainActivity.class);
+            Intent intent = new Intent(this, ScoutMainActivity.class);
             intent.putExtra("Match Setup", scanResult.getContents());
             intent.putExtra("Orientation", orientation);
-            startActivity(intent2);
+            startActivity(intent);
             finish();
         } else {
             Toast.makeText(getApplicationContext(), "Failed Scan", Toast.LENGTH_SHORT).show();
